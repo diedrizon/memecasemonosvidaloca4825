@@ -20,16 +20,16 @@ body {
   color: #606770; /* Color del texto */
   font-size: 14px; /* Tamaño del texto */
   margin-top: 10px; /* Ajusta esta línea para subir o bajar el texto "Español (España)" */
-  margin-bottom: 5px; /* Margen inferior del texto "Español (España)" */
+  margin-bottom: 15px; /* Margen inferior del texto "Español (España)" */
 }
 
 .login-logo {
   margin-top: 20px; /* Ajusta esta línea para subir o bajar el logo */
-  margin-bottom: 40px; /* Ajusta esta línea para el espaciado inferior del logo */
+  margin-bottom: 30px; /* Ajusta esta línea para el espaciado inferior del logo */
 }
 
 .login-logo img {
-  width: 55px; /* Tamaño del logo, ajusta según lo necesites */
+  width: 50px; /* Tamaño del logo, ajusta según lo necesites */
 }
 
 .login-form {
