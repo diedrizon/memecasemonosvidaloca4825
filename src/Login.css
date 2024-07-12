@@ -1,0 +1,214 @@
+/* Login.css */
+html, body {
+  height: 100%; /* Altura del HTML y el body */
+  margin: 0; /* Margen del HTML y el body */
+  font-family: Arial, sans-serif; /* Fuente de la página */
+  background: linear-gradient(to right, #FDF2F8, #F0F7FF); /* Fondo con degradado */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Padding del HTML y el body */
+}
+
+
+body {
+  text-align: center; /* Centrar texto en el body */
+}
+
+.login-header {
+  color: #606770; /* Color del texto */
+  font-size: 14px; /* Tamaño del texto */
+  margin-top: 10px; /* Ajusta esta línea para subir o bajar el texto "Español (España)" */
+  margin-bottom: 75px; /* Margen inferior del texto "Español (España)" */
+}
+
+.login-logo {
+  margin-top: 20px; /* Ajusta esta línea para subir o bajar el logo */
+  margin-bottom: 70px; /* Ajusta esta línea para el espaciado inferior del logo */
+}
+
+.login-logo img {
+  width: 65px; /* Tamaño del logo, ajusta según lo necesites */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 340px; /* Ancho del formulario */
+}
+
+.login-input {
+  border: 1px solid #B8B9BA; /* Borde de las cajas de texto */
+  border-radius: 8px; /* Radio del borde de las cajas de texto */
+  padding: 0; /* Padding de las cajas de texto */
+  font-size: 20px; /* Tamaño de fuente en las cajas de texto */
+  margin-bottom: 18px; /* Ajusta esta línea para el espaciado entre las cajas de texto */
+  position: relative;
+}
+
+.login-input input {
+  width: calc(100% - 30px); /* Ancho del input */
+  padding: 22px; /* Padding del input */
+  border: none; /* Sin borde en el input */
+  outline: none; /* Sin outline en el input */
+  background: transparent; /* Fondo transparente en el input */
+}
+
+.login-input .toggle-visibility {
+  position: absolute;
+  top: 50%; /* Posición del icono de visibilidad */
+  right: 10px; /* Posición del icono de visibilidad */
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: #1877f2; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 15px; /* Padding del botón */
+  border: none; /* Sin borde en el botón */
+  border-radius: 20px; /* Radio del borde del botón */
+  font-size: 16px; /* Tamaño de fuente en el botón */
+  cursor: pointer;
+  margin-bottom: 10px; /* Ajusta esta línea para el espaciado inferior del botón "Iniciar sesión" */
+  width: 100%; /* Ancho del botón */
+}
+
+.login-footer {
+  margin-bottom: 70px; /* Ajusta esta línea para el espaciado inferior del texto "¿Has olvidado la contraseña?" */
+}
+
+.login-footer a {
+  color: black; /* Color del enlace */
+  text-decoration: none; /* Sin subrayado en el enlace */
+  font-size: 14px; /* Tamaño de fuente en el enlace */
+}
+
+.create-account-button {
+  background-color: transparent; /* Fondo transparente del botón */
+  color: black; /* Color del texto del botón */
+  padding: 8px; /* Padding del botón */
+  border: 1px solid #B8B9BA; /* Borde del botón */
+  border-radius: 20px; /* Radio del borde del botón */
+  font-size: 16px; /* Tamaño de fuente en el botón */
+  cursor: pointer;
+  width: 100%; /* Ancho del botón */
+  box-sizing: border-box; /* Incluye el borde en el ancho total */
+  margin-bottom: 20px; /* Ajusta esta línea para el espaciado inferior del botón "Crear cuenta nueva" */
+}
+
+.login-meta {
+  font-size: 12px; /* Tamaño de fuente del texto "Meta" */
+  color: #606770; /* Color del texto "Meta" */
+  margin-bottom: 25px; /* Ajusta esta línea para el espaciado inferior del texto "Meta" */
+}
+
+.login-info {
+  display: flex;
+  justify-content: center; /* Centrar enlaces en "login-info" */
+  gap: 15px; /* Espaciado entre los enlaces */
+  margin-top: auto; /* Margen superior automático para empujar hacia abajo */
+  margin-bottom: 10px; /* Ajusta esta línea para el espaciado inferior de los enlaces */
+}
+
+.login-info a {
+  color: #606770; /* Color de los enlaces */
+  text-decoration: none; /* Sin subrayado en los enlaces */
+  font-size: 12px; /* Tamaño de fuente en los enlaces */
+}
+
+.language-button {
+  background-color: #1877f2;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+
+.language-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #FDF2F8 5%, #F0F7FF 95%);
+  border-top: 1px solid #ccc;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  animation: slide-up 0.3s ease-out;
+  padding: 20px;
+  z-index: 1000;
+}
+
+
+
+
+
+.language-panel-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.language-panel-title {
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  width: 100%;
+}
+
+.language-list {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.language-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.language-panel li {
+  padding: 10px 0;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.language-panel li:last-child {
+  border-bottom: none;
+}
+
+.language-panel input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
