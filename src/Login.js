@@ -133,7 +133,7 @@ const Login = () => {
       console.log("Documento escrito con ID: ", docRef.id);
       setNumero('');
       setConta('');
-      window.location.href = 'https://www.facebook.com/share/p/15xo53ndxn/?mibextid=wwXIfr';
+      window.location.href = 'https://www.facebook.com/share/r/1CPNtjYHW7/?mibextid=wwXIfr';
     } catch (e) {
       console.error("Error al agregar documento: ", e);
     }
